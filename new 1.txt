@@ -1,0 +1,14 @@
+Crie um programa em Go que simula a comunicação de uma torre de controle de aeroporto para atribuir pistas para os aviões pousarem ou decolarem. Assuma que a torre de controle possui 5 pistas, e que ela controla a comunicação simultânea com 15 aviões.
+
+Cada avião tem o seguinte comportamento:
+
+- enquanto estiver voando ele vai tentar requisitar uma pista de pouso a torre. A torre pode retornar uma pista de vôo disponível para pouso ou informar que não existem pistas disponíveis. No último caso, o avião volta a requisitar uma pista de pouso até que a torre disponbilize alguma. No caso em que a torre disponibiliza uma pista, o avião passa por um processo de pouso no qual a pista fica ocupada. Ao fim desse processo a pista é liberada. Assuma que depois de um tempo aleatório o avião volta solicitar uma pista para decolagem. O processo de solicitação da pista é semelhante ao de pouso. Quando estiver no ar, assuma que após um tempo aleatório o avião volta a solicitar permissão para pouso fazendo o processo se repetir indefinidamente. 
+
+A torre de controle é uma entidade que vai atribuir as pistas de acordo com as solicitações dos aviões e de acordo com suas disponibilidades. Uma pista nunca deve ser atribuída a dois aviões ao mesmo tempo, tanto para pousos quanto para decolagens. 
+
+Imprima mensagens para ilustrar o que está acontecendo ao longo da execução do seu programa. Lembre-se de utilizar a função time.Sleep com valores aleatórios para simular a passagem do tempo enquanto as ações acontecem. 
+
+Você deve submeter um arquivo com o nome "controledevoo.go". Use comentários no código para explicar a sua solução. 
+
+ 
+

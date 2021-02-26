@@ -1,0 +1,18 @@
+Altere o código do webcrawler concorrente disponível no AVA para que o mesmo possua um mecanismo de interação com o usuário. O novo webcrawler deve ter as seguintes funcionalidades:
+
+- ao invés de imprimir na saída padrão quando o termo é encontrado, seu programa deve guardar a informação das páginas que possuem o termo junto com um ranking, o qual é computado pela quantidade de vezes que o termo aparece na página. Por exemplo, se o termo "computação" está sendo pesquisado e ele aparece 5 vezes na página x, então você deve guardar a página x com ranking 5. 
+
+- Após iniciar o processo de busca, dispare um processo em paralelo que vai mostrar um menu para usuário escolher as seguintes opções:
+
+"1 - Pausar crawler" - esta opção deve pausar o processo de busca do crawler.
+
+"2 - Continuar crawler" - esta opção deve continuar o processo de busca do crawler. Esta opção só deve estar disponível caso a opção 1 tenha sido escolhida anteriormente.
+
+"3 - Listar o ranking de páginas" - nesta opção você deve imprimir na saída padrão a lista das páginas cujo o termo foi encontrado junto com o ranking de cada uma.
+
+"4 - Finalizar" - esta opção deve listar ranking no momento e em seguida interromper o programa.
+
+Utilize os mecanismos de sincronização da linguagem para implementar os mecanismos de comunicação necessários entre os processos concorrentes.
+
+OBS: você deve submeter um arquivo com o nome "webcrawler.go". Utilize comentários no código para explicar a sua solução.
+
